@@ -1,0 +1,199 @@
+html{
+    background-color:beige;
+    color:black;
+    height:100%;
+    background-position:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.back{
+    margin-top:0px; 
+    background-image:url('inception.jpg'); 
+    height:1400px;
+    width:100%;
+    background-position:top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.my{
+    padding-top:20px;
+    text-align: center;
+    background-color: cadetblue;
+    height:100%;
+    box-shadow:1px 1px black;
+    border-radius:40px;
+    
+}
+.userspace{
+    height:100%;
+  background-color:darkslateblue;
+  padding-top:100px;
+    margin-bottom:0px; 
+    text-align: center;
+}
+.mov{
+    margin-top:0px;  
+    width:100%;
+    color:black;
+    background-attachment: fixed;
+    /*background-color: darkslateblue;*/
+    height:100%;
+    margin-bottom:100px; 
+    font-size:30px; 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+.centera{
+    text-align: center;
+}
+
+.reg{
+    margin-top:0px;  
+    height:800px;
+    width:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+h1{
+    text-align:center;
+    font-family:sans-serif;
+    font-weight:100;
+    font-weight: 100;
+}
+body{
+    background-color:beige;
+    color:black;
+    background-position:center;
+    background-repeat:repeat;
+    background-size:cover;
+    
+}
+.formview{
+    margin-top:0px;
+    padding-top:40px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:30px; 
+    padding-bottom:20px;
+      
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.formview1{
+    margin-top:0px;
+    padding-top:40px;
+    padding-left:20px; 
+    padding-right:20px;
+    padding-bottom:30px; 
+    padding-bottom:20px;
+         
+}
+.rounded-circle{
+    height:200px;
+    width:200px;
+}
+.login{
+    border-style:groove;
+    border-color:black;
+    border-width:thick;
+    font-size:20px;
+    font-weight:600;  
+    margin-left:20px; 
+    padding:40px;
+    cursor: pointer;
+    background-color:darkorchid;
+    opacity:1;
+}
+.login:hover{
+    box-shadow: 10px 20px 10px -15px black inset;
+    
+}
+.signup{
+    border-style:groove;
+    border-color:black;
+    border-width:thick;
+    margin-left:20px;
+    font-size:23px;
+    font-weight:600; 
+    padding:40px;
+    height:400px;
+    cursor: pointer;
+    background-color:blueviolet;
+    opacity:1;
+}
+.signup:hover{
+       box-shadow: 10px 20px 20px -15px black inset; 
+}
+nav{
+    height:120px;
+}
+.btn{
+    cursor: pointer;
+}
+footer {
+    position:relative; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:70px;
+    padding-top:10px;
+    font-size:20px;
+    position:relative; 
+    font-weight:600;
+    margin-bottom:0px; 
+    background-color:#616161;
+    color: white;
+    text-align: center;
+}
+.cow{
+    padding-top:100px; 
+    border-radius:10px; 
+    margin-top:30px; 
+    height:450px;
+    width:auto;
+    font-size:40px;
+    font-weight:600;
+    font-family:sans-serif;
+    text-align: center;
+    background-color:blanchedalmond;
+    margin-left:110px;
+    margin-bottom:50px; 
+    opacity:0.9;
+}
+.box{
+    text-align: center;
+    align-content:center; 
+    height:150px;
+    margin-left:300px;
+    border-width: thick;
+    border-style: groove;
+    width:500px;
+    padding:10px; 
+}
+.box:hover{
+    border-left-color: black;
+    border-width: thick;
+    border-style: groove;
+ 
+}
+.cow:hover{
+    opacity:1;
+    border-style:solid;
+    border-width:10px;
+    border-left-color:fuchsia;
+    border-right-color: forestgreen;
+    border-bottom-color: firebrick;
+    border-top-color: chartreuse;
+    cursor:pointer;
+}
+hr{
+    border-width: medium;
+    border-color:black;
+    width:300px;
+}

@@ -1,0 +1,63 @@
+<div class="container-fluid formview1 reg">
+<div ng-if="value===1">
+<div class="alert alert-success" ng-bind="mesg" style={text-align:center; font-weight:600; font-size:20px;}></div>
+		           </div>
+<div class="row justify-content-center">
+<div class="col-sm-4 login">
+    <h3 style="text-align:center">Register <i class="fa fa-pencil-square" aria-hidden="true"></i></h3> 
+    <form ng-submit="regis(userForm.$valid)" name="userForm" role="form" method="post" novalidate>
+    <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+  <label class="form-control-label"> Name</label> 
+  <input type="text" name="name" class="form-control form-control-success" ng-model="reg.name" required>
+    <span ng-show="userForm.name.$invalid && userForm.name.$touched" class="text-danger">Name is required</span>    
+        </div>
+<div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+  <label class="form-control-label"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</label>
+  <input type="text" name="email" class="form-control form-control-success" ng-model="reg.email"  required>
+<span ng-show="userForm.email.$invalid && userForm.email.$touched" class="text-danger">Email is required</span>    
+    
+</div>
+<div class="form-group" ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine }">
+  <label class="form-control-label"> <i class="fa fa-mobile" aria-hidden="true"></i> Phone </label>
+  <input type="text" name="phone" class="form-control form-control-success" ng-model="reg.phone" required>
+    <span ng-show="userForm.phone.$invalid && userForm.phone.$touched" class="text-danger">Phone number is Required</span>    
+    
+</div>
+
+<div class="form-group" ng-class="{ 'has-error' : userForm.passw.$invalid && !userForm.passw.$pristine }">
+  <label class="form-control-label"> <i class="fa fa-unlock-alt" aria-hidden="true"></i> Password </label>
+  <input type="password" class="form-control form-control-success" 
+        name="passw" ng-model="reg.passw" required>
+    <span ng-show="userForm.passw.$invalid && userForm.passw.$touched" class="text-danger">Password is required</span>    
+    
+</div>
+        <div class="form-group" ng-class="{ 'has-error' : userForm.cpass.$invalid && !userForm.cpass.$pristine }">
+  <label class="form-control-label"> <i class="fa fa-lock" aria-hidden="true"></i> Confirm Password  </label>
+  <input type="password" name="cpass" class="form-control form-control-success" ng-model="reg.cpass" required>
+            <span ng-show="userForm.cpass.$invalid && userForm.cpass.$touched" class="text-danger">Confirm Password</span>    
+    
+</div>
+        <input class="btn btn-outline-success" type="submit" value="Submit" ng-disabled="userForm.$invalid">
+        
+ </form>
+    </div>
+        
+<div class="col-lg-4 signup">
+    <h3 style="text-align:center">Sign in <i class="fa fa-hand-o-right" aria-hidden="true"></i></h3> 
+    <form ng-submit="studsig()" autocomplete="off" name="logForm" role="form" method="post">
+<div class="form-group">
+  <label class="form-control-label"><i class="fa fa-key" aria-hidden="true"></i> Email</label>
+  <input type="text" class="form-control form-control-success" ng-model="sign.email"  autocomplete="off" required>
+</div>
+<div class="form-group">
+  <label class="form-control-label">
+      <i class="fa fa-unlock-alt" aria-hidden="true"></i> Password </label>
+  <input type="password" class="form-control form-control-success" 
+         ng-model="sign.pass1" autocomplete="off" required>
+</div>
+        <input type="submit" value="Go" ng-disabled="logForm.$invalid" class="btn btn-outline-success">
+ </form>
+</div>
+        
+    </div>
+    </div>

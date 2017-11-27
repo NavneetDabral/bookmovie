@@ -1,0 +1,12 @@
+<div class="mov" ui-view>
+    <div class="container-fluid">
+       <div class="row">
+           <div ng-repeat="r in cities" class="col-lg-3 cow">
+               </br>
+           {{r.c_name}}  <hr>
+           <button type="button" class="btn btn-success" ui-sref=".theater({c_id:r.c_id})"><h5>Check Theaters <i class="fa fa-location-arrow fa-spin" aria-hidden="true"></i></h5></button>
+           </div>
+           
+       </div>
+    </div>
+    </div>

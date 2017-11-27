@@ -1,0 +1,28 @@
+<div class="userspace">
+<div ng-if="value==2"> 
+<div class="container my">
+      <button type="button" class="btn btn-danger btn-large" ng-click=logout()>
+    logout</button>
+    <h2>
+     Welcome :{{user}}</br><hr>
+    <div ng-if="booking==1">
+        <div class="alert alert-success">
+     {{mesg1}}
+        </div>
+    </div>
+    <div ng-repeat="r in cat" class="alert alert-success box">
+              show id:{{r.sh_id}} <br>
+              screen no :{{r.screen_no}} <br>
+              seat_no:{{r.seat_no}}<br>
+
+           </div>
+     
+    </h2>
+</div>
+</div>
+<div ng-if="value==1">
+    <div class="container my">
+        <h1>{{mesg}}</h1>
+    </div>
+</div>
+</div>

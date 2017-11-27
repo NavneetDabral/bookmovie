@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+        <link href="design/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="design/main.css" rel="stylesheet">
+    </head>
+	<body ng-app="library">
+        <nav class="navbar navbar-toggleable-md sticky-top navbar-light" style="background-color:#E65100; color:black; font-size:25px; font-weight:700;">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/"><h2></i>STARK CINEMAS </h2></a>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" ui-sref="movies">Movies <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" ui-sref="city">Cities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="register">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ui-sref="dashboard">Myspace</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                  
+
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <div class="back" ui-view>
+            </div>
+
+    <footer>
+        developed with <i class="fa fa-heart" aria-hidden="true"></i> by Navneet Dabral  <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>   <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>  &amp; Nitish Bhatt <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>  <i class="fa fa-linkedin-square fa-lg " aria-hidden="true"></i>
+        
+    </footer>
+           
+        <script type="text/javascript" src="node_modules/angular/angular.js"></script> 
+        <script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="design/jquery-3.1.1.slim.min.js"></script>
+        <script type="text/javascript" src="node_modules/tether/dist/js/tether.min.js"></script>    
+        <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>        
+        <script type="text/javascript" src="app.js"></script>   
+
+	</body>
+	</html>

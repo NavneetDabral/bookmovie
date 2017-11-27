@@ -1,0 +1,15 @@
+{
+  "name": "library_mgmt",
+  "version": "1.0.0",
+  "description": "nituk library management system",
+  "main": "index.js",
+  "dependencies": {
+    "angular-cookies": "^1.6.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Navneet Dabral",
+  "license": "ISC"
+}

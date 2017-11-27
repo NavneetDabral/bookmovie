@@ -1,0 +1,13 @@
+<div class="mov" ui-view>
+    <div class="container-fluid">
+       <div class="row">
+           <div ng-repeat="r in cat" class="col-lg-3 cow">
+               <i class="fa fa-bank fa-2x" aria-hidden="true"></i></br>
+               {{r.th_name}} <hr>
+              Location : {{r.th_loc}}
+               <button type="button" class="btn btn-info" ui-sref=".show({th_id:r.th_id})">Check shows</button>
+
+           </div>
+       </div>
+    </div>
+    </div>

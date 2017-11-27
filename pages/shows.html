@@ -1,0 +1,14 @@
+<div class="mov" ui-view>
+    <div class="container-fluid">
+       <div class="row">
+           <div ng-repeat="r in cat" class="col-lg-3 cow">
+               </br>
+              {{r.m_name}} <hr>
+              START: {{r.st_time}}</br>
+              END :{{r.end_time}} </br>
+               <button type="button" class="btn btn-info" ui-sref=".avail({sh_id:r.sh_id})">Check sheets</button>
+         </div>
+
+    </div>
+    </div>
+</div>
